@@ -80,7 +80,7 @@ dataframes = {
 
 visualizer = Visualization(dataframes)
 models = ['Exponential Smoothing', 'Linear Regression', 'Prophet']
-merged_df = pd.read_csv(r'data\btc_reddit.csv')
+merged_df = pd.read_csv('data/btc_reddit.csv')
 def correlation_gauge(merged_df):
     
         pearson_corr, _ = pearsonr(merged_df['return'], merged_df['score'])
